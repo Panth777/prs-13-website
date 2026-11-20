@@ -219,6 +219,12 @@
   .notice-bar { background: var(--gold); color: #111; text-align: center; padding: 9px 16px; font-weight: 700; }
   .notice-bar p { margin: 0 auto; }
 
+  .wa-float { position: fixed; right: 18px; bottom: 18px; z-index: 50; background: #1faa55; color: #fff; font-weight: 800; padding: 12px 20px; border-radius: 999px; text-decoration: none; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45); }
+  .wa-float:hover, .wa-float:focus { background: #178a44; color: #fff; text-decoration: none; }
+
+  .referral { background: var(--ink-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .referral h2 { color: var(--gold); }
+
   /* Stats strip */
   .stats { background: var(--ink-deep); padding: 28px 0; border-bottom: 1px solid var(--line); }
   .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
@@ -438,6 +444,7 @@
       <a href="#gallery">Gallery</a>
       <a href="#classes">Classes</a>
       <a href="#faq">FAQ</a>
+      <a href="https://prs-13-member-app-vercel.vercel.app" target="_blank" rel="noopener">Member App</a>
       <a class="btn-nav" href="https://wa.me/917888686976?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial%20class%20at%20PRS-13%20Fight%20%26%20Fitness%20Academy." target="_blank" rel="noopener">Book a free trial class</a>
     </nav>
   </div>
@@ -852,6 +859,15 @@
 </section>
 
 <!-- JOIN / CONTACT -->
+<!-- REFER A FRIEND -->
+<section class="section referral">
+  <div class="wrap">
+    <h2>Bring a friend, get ₹500 off</h2>
+    <p>Already a member? Share your referral code from the Member App — when a friend joins with your code, you get ₹500 off your next fee.</p>
+    <p><a class="btn btn-ghost" href="https://prs-13-member-app-vercel.vercel.app" target="_blank" rel="noopener">Open the Member App</a></p>
+  </div>
+</section>
+
 <section id="join" class="section join bg-photo bg-join">
   <div class="wrap">
     <h2>Start with one free class</h2>
@@ -859,6 +875,7 @@
     <div class="join-actions">
       <a class="btn btn-red" href="tel:+917888686976">Call Pankaj: 7888686976</a>
       <a class="btn btn-wa" href="https://wa.me/917888686976?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial%20class%20at%20PRS-13%20Fight%20%26%20Fitness%20Academy." target="_blank" rel="noopener">Chat on WhatsApp</a>
+      <a class="btn btn-ghost" href="https://prs-13-member-app-vercel.vercel.app" target="_blank" rel="noopener">Open Member App</a>
     </div>
     <p class="fine-print">Tapping Call opens your phone&rsquo;s dialler with the number ready — one more tap to call. WhatsApp opens a chat on the same number.</p>
     <div class="cards two">
@@ -891,6 +908,8 @@
     <p class="fine-print">SCO A-7, DD Mittal Towers, Multania Road, Bathinda, Punjab – 151001. Class timings: 5:00 AM – 10:00 AM &nbsp;|&nbsp; 3:00 PM – 9:00 PM. Pankaj Panth: 7888686976, 9056084814. Ashu Panth: 7626810047.</p>
   </div>
 </footer>
+
+<a class="wa-float" href="https://wa.me/917888686976?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial%20class%20at%20PRS-13%20Fight%20%26%20Fitness%20Academy." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">Chat on WhatsApp</a>
 
 </body>
 </html>
