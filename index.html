@@ -227,6 +227,14 @@
 
   .map-embed { width: 100%; height: 300px; border: 0; border-radius: 10px; margin-top: 12px; display: block; }
 
+  .card-link { display: block; color: inherit; text-decoration: none; }
+  .card-link:hover, .card-link:focus { color: inherit; text-decoration: none; }
+  .card-link:hover .card, .card-link:focus .card { border-color: var(--gold); }
+  .card-link .card { height: 100%; }
+  .pay-qr { text-align: center; }
+  .pay-qr img { background: #fff; padding: 14px; border-radius: 12px; width: 240px; height: 240px; }
+  .pay-qr code { font-size: 1.05rem; }
+
   /* Stats strip */
   .stats { background: var(--ink-deep); padding: 28px 0; border-bottom: 1px solid var(--line); }
   .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
@@ -644,28 +652,37 @@
 <section id="fees" class="section section-tint">
   <div class="wrap">
     <h2>Fees — simple, no hidden charges</h2>
+    <p>Tap a plan to pay by UPI — or tap the free class to book it.</p>
     <div class="cards four">
+      <a class="card-link" href="#join">
       <article class="card card-featured">
         <p class="tag tag-red">Try first</p>
         <h3>1 day free class</h3>
         <p class="price">₹0</p>
         <p>Come and try one class free, before you join.</p>
       </article>
+      </a>
+      <a class="card-link" href="#pay">
       <article class="card">
         <h3>1 month</h3>
         <p class="price">₹1,500</p>
         <p>One month of training, with a trainer for every session.</p>
       </article>
+      </a>
+      <a class="card-link" href="#pay">
       <article class="card">
         <h3>3 months</h3>
         <p class="price">₹4,000</p>
         <p>Three months of training, with a trainer for every session.</p>
       </article>
+      </a>
+      <a class="card-link" href="#pay">
       <article class="card">
         <h3>6 months</h3>
         <p class="price">₹7,500</p>
         <p>Six months of training, with a trainer for every session.</p>
       </article>
+      </a>
     </div>
     <div class="faq-inline">
       <details class="faq-item">
@@ -677,6 +694,18 @@
         <p>Registration is free — only the monthly fee or the package fee is paid in advance. The dress code is the gym gear — a black and red t-shirt and shorts with academy branding, made for fighters, which cost ₹450 at the academy. Protective gear for sparring is provided by the academy.</p>
       </details>
     </div>
+  </div>
+</section>
+
+<!-- PAY BY UPI -->
+<section id="pay" class="section">
+  <div class="wrap pay-qr">
+    <h2>Pay your fee by UPI</h2>
+    <p>Scan the code with any UPI app — Google Pay, PhonePe, Paytm — it opens the payment directly. Enter the amount for your plan: 1 month ₹1,500, 3 months ₹4,000, 6 months ₹7,500.</p>
+    <p><img src="assets/upi-qr.png" alt="UPI QR code — scan to pay PRS-13 Fight &amp; Fitness Academy" width="240" height="240" /></p>
+    <p>Payee: <strong>Pankaj Panth</strong><br />
+    UPI ID: <code>panth.pankaj-2@okaxis</code></p>
+    <p>After you pay, tell the coach at the academy — your membership starts once the payment is confirmed.</p>
   </div>
 </section>
 
