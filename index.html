@@ -174,7 +174,8 @@
     border-bottom: 1px solid var(--line);
   }
   .header-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; padding-top: 12px; padding-bottom: 12px; }
-  .brand { margin: 0; font-family: "Barlow Condensed", "Oswald", "Arial Narrow", Arial, sans-serif; font-size: 1.35rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; max-width: none; }
+  .brand { margin: 0; font-family: "Barlow Condensed", "Oswald", "Arial Narrow", Arial, sans-serif; font-size: 1.35rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; max-width: none; display: flex; align-items: center; }
+  .brand-logo { height: 46px; width: auto; margin-right: 10px; border-radius: 8px; }
   .brand-mark { background: var(--crimson); color: #fff; padding: 2px 10px; border-radius: 4px; margin-right: 8px; }
   .main-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; margin-left: auto; }
   .main-nav a { color: #fff; font-weight: 700; font-size: 0.95rem; text-decoration: none; padding: 6px 0; }
@@ -449,7 +450,7 @@
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <p class="brand"><span class="brand-mark">PRS&#8209;13</span> Fight &amp; Fitness Academy</p>
+    <p class="brand"><img class="brand-logo" src="assets/logo-shield.png" alt="PRS-13 Fight &amp; Fitness Academy logo" /><span class="brand-mark">PRS&#8209;13</span> Fight &amp; Fitness Academy</p>
     <nav class="main-nav" aria-label="Main">
       <a href="#programs">Programs</a>
       <a href="#fees">Fees</a>
