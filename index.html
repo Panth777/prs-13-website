@@ -223,6 +223,13 @@
   .call-float { background: var(--crimson); color: #fff; font-weight: 800; padding: 12px 20px; border-radius: 999px; text-decoration: none; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45); }
   .call-float:hover, .call-float:focus { background: var(--crimson-dark); color: #fff; text-decoration: none; }
 
+  .modal { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.85); display: none; align-items: center; justify-content: center; z-index: 100; padding: 20px; }
+  .modal:target { display: flex; }
+  .modal-card { background: var(--ink-alt); border: 1px solid var(--line); border-radius: 12px; max-width: 480px; width: 100%; padding: 28px 24px; }
+  .modal-card h3 { margin-top: 0; }
+  .modal-card .btn { display: block; text-align: center; margin: 10px 0; }
+  .modal-close { display: block; text-align: center; margin-top: 14px; color: var(--muted); }
+
   .referral { background: var(--ink-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .referral h2 { color: var(--gold); }
 
@@ -907,6 +914,7 @@
       <a class="btn btn-wa" href="https://wa.me/917626810047?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial%20class%20at%20PRS-13%20Fight%20%26%20Fitness%20Academy." target="_blank" rel="noopener">WhatsApp Ashu</a>
       <a class="btn btn-wa" href="https://wa.me/917973931150?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial%20class%20at%20PRS-13%20Fight%20%26%20Fitness%20Academy." target="_blank" rel="noopener">WhatsApp Pooja</a>
       <a class="btn btn-ghost" href="https://prs-13-member-app-vercel.vercel.app" target="_blank" rel="noopener">Open Member App</a>
+      <a class="btn btn-red" href="#app-download">Download Member App</a>
     </div>
     <p class="fine-print">Tapping Call opens your phone&rsquo;s dialler with the number ready — one more tap to call. WhatsApp opens a chat on the same number.</p>
     <div class="cards two">
@@ -941,6 +949,17 @@
     <p class="fine-print">SCO A-7, DD Mittal Towers, Multania Road, Bathinda, Punjab – 151001. Class timings: 5:00 AM – 10:00 AM &nbsp;|&nbsp; 3:00 PM – 9:00 PM. Pankaj Panth: 7888686976, 9056084814. Ashu Panth: 7626810047.</p>
   </div>
 </footer>
+
+<div class="modal" id="app-download" role="dialog" aria-label="Get the PRS-13 Member App">
+  <div class="modal-card">
+    <h3>Get the PRS-13 Member App</h3>
+    <p>The app is for registered members. You get your login code when you register.</p>
+    <a class="btn btn-wa" href="https://wa.me/917973931150?text=Hi%2C%20I%20want%20to%20register%20for%20PRS-13%20Fight%20%26%20Fitness%20Academy." target="_blank" rel="noopener">Register now on WhatsApp</a>
+    <a class="btn btn-red" href="#fees">See plans &amp; pay</a>
+    <a class="btn btn-ghost" href="https://prs-13-member-app-vercel.vercel.app" target="_blank" rel="noopener">I have my code — Open the app</a>
+    <a class="modal-close" href="#join">Close</a>
+  </div>
+</div>
 
 <div class="float-actions">
 <a class="wa-float" href="https://wa.me/917973931150?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial%20class%20at%20PRS-13%20Fight%20%26%20Fitness%20Academy." target="_blank" rel="noopener" aria-label="Chat with Pooja on WhatsApp">WhatsApp Pooja</a>
